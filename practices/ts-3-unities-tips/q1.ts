@@ -1,24 +1,24 @@
-interface BasicSegment {
-	id: string;
-	uri: string;
-	page: number;
+export interface BasicSegment {
+  id: string;
+  uri: string;
+  page: number;
 }
 
-interface MemberSegment {
-	phone: string;
-	address: string;
+export interface MemberSegment {
+  phone: string;
+  address: string;
 }
 
 // 改寫這個
-interface UserSegment {
-	id: string;
-	uri: string;
-	page: number;
-	phone: string;
-	address: string;
+export interface UserSegment {
+  id: string;
+  uri: string;
+  page: number;
+  phone: string;
+  address: string;
 }
 
 // 改寫完之後變成...
-interface UserSegment {
-	//...?
+export interface UserSegment {
+  //...?
 }
