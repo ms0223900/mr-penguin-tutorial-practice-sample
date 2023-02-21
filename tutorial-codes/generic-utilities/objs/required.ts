@@ -5,6 +5,11 @@ type SomeObj = {
 
 type Obj = Required<SomeObj>;
 
+const obj: Obj = {
+  b: 0,
+  a: "",
+};
+
 //實作...
 type MyRequired<T> = {
   [K in keyof T]-?: T[K]; //-?

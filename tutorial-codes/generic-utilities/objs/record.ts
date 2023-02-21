@@ -3,6 +3,7 @@ type StrObj = Record<string, string>;
 //   [key: string]: string;
 // }
 
+// sample2
 type DataKey = "id" | "username" | "link";
 type ApiData = Record<DataKey, string>;
 // type ApiData = {
@@ -10,8 +11,15 @@ type ApiData = Record<DataKey, string>;
 //   username: string;
 //   link: string;
 // }
+const apiData: ApiData = {
+  id: "",
+  username: "",
+  link: "",
+};
 
 // 實作
-type MyRecord<Key extends keyof any, Val> = {
-  [key in Key]: Val;
+type MyRecord<K extends keyof any, V> = {
+  [key in K]: V;
 };
+
+type Recorded = MyRecord<string, string>;
